@@ -1,0 +1,2 @@
+<button bindtap="wxpay">发起支付</button>
+<button bindtap="scan">扫描二维码</button>
