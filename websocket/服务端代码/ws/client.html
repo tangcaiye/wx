@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	我是client1
+	<input type="text" id="msg">
+	<button id="send">发送消息</button>
+</body>
+<script type="text/javascript">
+var send = document.querySelector("#send")
+var msg = document.querySelector("#msg")
+
+// 跟websocket服务器创建连接
+var socket = new WebSocket("ws://localhost:3001")
+
+/*socket.addEventListener("open", function (){
+
+	console.log("连接成功")
+}, false)*/
+
+send.addEventListener("click",function (){
+
+	var val = msg.value
+	socket.send(val)
+},false)
+
+//监听服务端发送过来的消息
+socket.addEventListener("message",function (ev){
+	console.log(ev.data)
+})
+
+
+</script>
+</html>
