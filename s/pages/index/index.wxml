@@ -1,0 +1,3 @@
+<view class="container">
+	<canvas style="width:100%;height:100%;" canvas-id="firstCanvas" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd"></canvas>
+</view>
