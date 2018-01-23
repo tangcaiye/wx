@@ -1,0 +1,1 @@
+<button bindtap="login">登陆</button>
