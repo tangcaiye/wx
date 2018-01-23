@@ -1,0 +1,3 @@
+<button bindtap="uploadImg">上传图片</button>
+<button bindtap="downImg">下载图片</button>
+<image src="{{imgSrc}}"></image>
