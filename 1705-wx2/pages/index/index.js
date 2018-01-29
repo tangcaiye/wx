@@ -52,5 +52,12 @@ Page({
       title: '西红柿大战白菜头',
       path: '/pages/index'
     }
+  },
+  toPage (event) {
+    // console.log(event)
+    let id = event.target.dataset.id
+    wx.navigateTo({
+      url: '/pages/product-item/product-item?id=' + id
+    })
   }
 })
