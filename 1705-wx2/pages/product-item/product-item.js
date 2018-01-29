@@ -71,5 +71,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  goMine () {
+    wx.switchTab({
+      url: '/pages/mine/mine',
+    })
   }
 })

@@ -4,5 +4,6 @@
   <image src="{{productInfo.imgs.big}}"></image>
 </view>
 <view>{{productInfo.details}}</view>
-<navigator url='/pages/mine/mine' open-type='switchTab'>跳转我的页</navigator>
+<!-- <navigator url='/pages/mine/mine' open-type='switchTab'>跳转我的页</navigator> -->
+<button bindtap='goMine'>跳转到我的页</button>
 <navigator open-type='navigateBack'>返回</navigator>
