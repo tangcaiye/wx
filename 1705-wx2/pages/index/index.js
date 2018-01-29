@@ -2,12 +2,15 @@
 const num = 20
 let start = 0
 
+let common = require("../../utils/common.js")
+
 Page({
   data: {
     categories: [],
     products: []
   },
   onLoad () {
+    common.say('蔡威')
     wx.request({
       url: `http://localhost:3000/products?_start=${start}&_limit=${num}`,
       success: (res) => {
