@@ -1,0 +1,6 @@
+<!-- <view wx:for="{{products}}" wx:key="{{item.id}}">
+  <text>{{index}}</text><text>{{item.name}}</text>
+  <image src="{{item.imgs.min}}"></image>
+</view> -->
+<!--默认跳转非tabBar页面,类似router-link  -->
+<navigator wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" url="/pages/product-item/product-item?id={{item.id}}">{{item.name}}</navigator>

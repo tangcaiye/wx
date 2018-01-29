@@ -1,0 +1,6 @@
+<!--pages/product-item/product-item.wxml-->
+<view>{{productInfo.name}}</view>
+<view>
+  <image src="{{productInfo.imgs.big}}"></image>
+</view>
+<view>{{productInfo.details}}</view>
