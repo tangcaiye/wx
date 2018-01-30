@@ -42,7 +42,7 @@ module.exports.message = msg;
 
 <view> {{m1.message}} </view> -->
 <!-- 下面的 getMax 函数，接受一个数组，且返回数组中最大的元素的值 -->
-<wxs module="m1">
+<!-- <wxs module="m1">
 var getMax = function(array) {
   var max = undefined;
   for (var i = 0; i < array.length; ++i) {
@@ -54,8 +54,10 @@ var getMax = function(array) {
 }
 
 module.exports.getMax = getMax;
-</wxs>
+</wxs> -->
 
 <!-- 调用 wxs 里面的 getMax 函数，参数为 page.js 里面的 array -->
-<view> {{m1.getMax(array)}} </view>
-
+<!-- <view> {{m1.getMax(array)}} </view> -->
+<view class="view1">
+  
+</view>
