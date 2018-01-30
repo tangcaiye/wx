@@ -2,4 +2,5 @@
 <view class="inner">
   {{innerText}}
 </view>
- <slot></slot> 
+<view bindtap="numUp">{{num}}</view>
+<slot></slot> 

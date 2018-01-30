@@ -14,13 +14,19 @@ Component({
    * 组件的初始数据
    */
   data: {
-  
+    num: 0
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-
+    numUp () {
+      let num = this.data.num
+      num++
+      this.setData({
+        num: num
+      })
+    }
   }
 })
