@@ -1,2 +1,4 @@
 <!--pages/mine/mine.wxml-->
 <text>pages/mine/mine.wxml</text>
+<import src="../index/index.wxml"/>
+<template is="msgItem" data="{{index: 3, msg: '呵呵', time: '2018-01-29'}}" />

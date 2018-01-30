@@ -8,13 +8,13 @@
 <!-- <view wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" data-id="{{item.id}}" bindtap="toPage">{{item.name}}</view> -->
 <!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
 <!--定义一个叫msgItem的模板  -->
-<!-- <template name="msgItem">
+ <template name="msgItem">
   <view>
     <text> {{index}}: {{msg}} </text>
     <text> Time: {{time}} </text>
   </view>
 </template>
-<template is="msgItem" data="{{index: 1, msg: '哈哈', time: 2018-01-30}}" /> -->
+<template is="msgItem" data="{{index: 1, msg: '哈哈', time: 2018-01-30}}" /> 
 <!-- <view wx:for="{{10}}">
   <view>{{item}}</view>
   <text wx:for="{{10}}" wx:for-item="itemName">{{itemName}}</text>
