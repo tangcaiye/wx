@@ -4,6 +4,34 @@
 </view> -->
 <!--默认跳转非tabBar页面,类似router-link  -->
 <!--switchTab，跳转tabBar页面  -->
- <!-- <navigator wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" url="/pages/product-item/product-item?id={{item.id}}" hover-class="bgred">{{item.name}}</navigator>  -->
-<view wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" data-id="{{item.id}}" bindtap="toPage">{{item.name}}</view>
+  <!-- <navigator wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" url="/pages/product-item/product-item?id={{item.id}}" hover-class="bgred">{{item.name}}</navigator>   -->
+<!-- <view wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" data-id="{{item.id}}" bindtap="toPage">{{item.name}}</view> -->
+<!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
+<!--定义一个叫msgItem的模板  -->
+<!-- <template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+<template is="msgItem" data="{{index: 1, msg: '哈哈', time: 2018-01-30}}" /> -->
+<!-- <view wx:for="{{10}}">
+  <view>{{item}}</view>
+  <text wx:for="{{10}}" wx:for-item="itemName">{{itemName}}</text>
+</view> -->
+<!-- <block wx:for="{{3}}">
+<view> {{index}}: </view>
+<view> {{item}} </view>
+</block> -->
+<!-- <view hidden="{{len==1}}">1</view>
+<view hidden="{{len>1}}">大于1</view> -->
+<view id="outer" bindtap="outerHandle">
+  outer
+  <view id="middle" catchtap='middleHandle'>
+    middle
+    <view id="inner" bindtap='innerHandle'>
+      inner
+    </view>
+  </view>
+</view>
 

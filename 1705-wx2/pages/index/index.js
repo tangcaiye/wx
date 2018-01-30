@@ -7,12 +7,19 @@ let common = require("../../utils/common.js")
 Page({
   data: {
     categories: [],
-    products: []
+    products: [],
+    zero: 0,
+    item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-09-15'
+    },
+    len: 3
   },
   onLoad () {
     common.say('蔡威')
     wx.request({
-      url: `http://localhost:3000/products?_start=${start}&_limit=${num}`,
+      url: `http://10.3.154.221:3000/products?_start=${start}&_limit=${num}`,
       success: (res) => {
         // res.data新的20条
         let products = this.data.products
@@ -29,7 +36,7 @@ Page({
   },
   onPullDownRefresh () {
     console.log('触发了下拉操作')
-    wx.stopPullDownRefresh()
+    // wx.stopPullDownRefresh()
   },
   onReachBottom () {
     console.log('到底啦')
@@ -37,8 +44,9 @@ Page({
     wx.showLoading({
       title: "加载中..."
     })
+    
     wx.request({
-      url: `http://localhost:3000/products?_start=${start}&_limit=${num}`,
+      url: `http://10.3.154.221:3000/products?_start=${start}&_limit=${num}`,
       success: (res) => {
         wx.hideLoading()
         // res.data新的20条
@@ -62,5 +70,14 @@ Page({
     wx.navigateTo({
       url: '/pages/product-item/product-item?id=' + id
     })
+  },
+  outerHandle (event) {
+    console.log(event)
+  },
+  middleHandle (event) {
+    console.log(event)
+  },
+  innerHandle (event) {
+    console.log(event)
   }
 })
