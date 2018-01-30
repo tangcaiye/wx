@@ -4,7 +4,7 @@
 </view> -->
 <!--默认跳转非tabBar页面,类似router-link  -->
 <!--switchTab，跳转tabBar页面  -->
-  <!-- <navigator wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" url="/pages/product-item/product-item?id={{item.id}}" hover-class="bgred">{{item.name}}</navigator>   -->
+<navigator wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" url="/packageA/pages/product-item/product-item?id={{item.id}}" hover-class="bgred">{{item.name}}</navigator>   
 <!-- <view wx:for="{{products}}" wx:key="{{item.id}}" wx:if="{{index<10}}" data-id="{{item.id}}" bindtap="toPage">{{item.name}}</view> -->
 <!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
 <!--定义一个叫msgItem的模板  -->
@@ -62,6 +62,7 @@ module.exports.getMax = getMax;
   
 </view> -->
 <!--给caiwei组件自定义了一个叫tangcaiye的自定义事件  -->
-<caiwei inner-text="我是唐菜也" bindtangcaiye="evenetHandle">
-  <button>按钮</button>
-</caiwei>
+<!-- <caiwei inner-text="我是唐菜也" bindtangcaiye="evenetHandle">
+  <button slot="before">按钮</button>
+  <view slot="after">after</view>
+</caiwei> -->

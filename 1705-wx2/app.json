@@ -3,8 +3,15 @@
     "pages/index/index",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/mine/mine",
-    "pages/product-item/product-item"
+    "pages/mine/mine"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/product-item/product-item"
+      ]
+    }
   ],
   "window":{
     "backgroundTextStyle":"light",

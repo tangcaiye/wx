@@ -3,6 +3,9 @@ Component({
   /**
    * 组件的属性列表
    */
+  options: {
+    multipleSlots: true // 在组件定义时的选项中启用多slot支持
+  },
   properties: {
     innerText: {
       type: String,
@@ -29,7 +32,9 @@ Component({
         num: num
       })
       // 调用我的自定义事件tangcaiye
-      this.triggerEvent('tangcaiye')
+      this.triggerEvent('tangcaiye',{
+        num: num
+      })
     }
   }
 })
