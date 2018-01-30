@@ -1,9 +1,8 @@
 /**index.wxss**/
 page{
   background: #f2f2f2;
+  height: 100%;
 }
-.view1{
-  width: 375rpx;
-  height: 375rpx;
-  background-color: yellow;
+.wrap{
+  height: 100%;
 }
