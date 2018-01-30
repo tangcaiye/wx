@@ -61,6 +61,7 @@ module.exports.getMax = getMax;
 <!-- <view class="view1">
   
 </view> -->
-<caiwei inner-text="我是唐菜也">
+<!--给caiwei组件自定义了一个叫tangcaiye的自定义事件  -->
+<caiwei inner-text="我是唐菜也" bindtangcaiye="evenetHandle">
   <button>按钮</button>
 </caiwei>

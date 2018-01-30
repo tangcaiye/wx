@@ -80,5 +80,8 @@ Page({
   },
   innerHandle (event) {
     console.log(event)
+  },
+  evenetHandle () {
+    console.log('触发了tangcaiye事件')
   }
 })

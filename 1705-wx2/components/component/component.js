@@ -21,12 +21,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // 定义了一个私有方法
     numUp () {
       let num = this.data.num
       num++
       this.setData({
         num: num
       })
+      // 调用我的自定义事件tangcaiye
+      this.triggerEvent('tangcaiye')
     }
   }
 })
