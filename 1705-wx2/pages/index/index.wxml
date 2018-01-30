@@ -1,3 +1,4 @@
-<scroll-view class='wrap' scroll-y="{{true}}">
+<scroll-view class='wrap' scroll-y scroll-top="200" scroll-with-animation enable-back-to-top bindscrolltolower="tolowerHandle" bindscroll="scrollHandle">
   <view wx:for="{{100}}">{{item}}</view>
+  <view id="a">a</view>
 </scroll-view>
