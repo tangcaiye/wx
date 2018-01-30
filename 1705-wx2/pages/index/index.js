@@ -14,7 +14,8 @@ Page({
       msg: 'this is a template',
       time: '2016-09-15'
     },
-    len: 3
+    len: 3,
+    array: [1, 2, 3, 4, 5, 1, 2, 3, 4]
   },
   onLoad () {
     common.say('蔡威')
