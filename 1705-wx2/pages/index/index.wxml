@@ -1,4 +1,9 @@
-<scroll-view class='wrap' scroll-y scroll-top="200" scroll-with-animation enable-back-to-top bindscrolltolower="tolowerHandle" bindscroll="scrollHandle">
+<!-- <scroll-view class='wrap' scroll-y scroll-top="200" scroll-with-animation enable-back-to-top bindscrolltolower="tolowerHandle" bindscroll="scrollHandle">
   <view wx:for="{{100}}">{{item}}</view>
   <view id="a">a</view>
-</scroll-view>
+</scroll-view> -->
+<swiper indicator-dots autoplay current="1" circular interval="2000">
+  <swiper-item wx:for="{{products}}" wx:key="{{index}}">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
