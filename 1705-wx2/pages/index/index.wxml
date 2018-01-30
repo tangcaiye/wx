@@ -58,6 +58,9 @@ module.exports.getMax = getMax;
 
 <!-- 调用 wxs 里面的 getMax 函数，参数为 page.js 里面的 array -->
 <!-- <view> {{m1.getMax(array)}} </view> -->
-<view class="view1">
+<!-- <view class="view1">
   
-</view>
+</view> -->
+<caiwei inner-text="我是唐菜也">
+  <button>按钮</button>
+</caiwei>
